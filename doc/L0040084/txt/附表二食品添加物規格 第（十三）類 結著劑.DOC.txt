@@ -1,0 +1,160 @@
+
+§ 13001
+                                  焦磷酸鉀
+                        Tetrapotassium Pyrophosphate
+                           Potassium Pyrophosphate
+                         Tetrapotassium Disphosphate
+
+|分子式：K4P2O7                   | 分子量：330.34                 |
+|1. |含量      |：含K4P2O7 95 ％以上（以乾物重計）。              |
+|2. |外觀及性狀|：無色～白色結晶或塊狀或白色粉末或結晶性粉末。具吸|
+|   |          |溼性。易溶於水，但不溶於乙醇中。                  |
+|3. |pH    值  |：本品1 g溶於水100 mL，其溶液之pH值應為10.0～10.7 |
+|   |          |。                                                |
+|4. |磷酸鹽    |：本品1 g溶於水100 mL，取此溶液1 mL加硝酸銀試液數 |
+|   |          |滴時，不得有深黃色沉澱生成。若有白色或微黃色沉澱生|
+|   |          |成，此沉澱物可再溶於稀硝酸中。                    |
+|5. |鉀離子    |：本品1 g溶於水20 mL，其鉀離子試驗呈陽性反應。    |
+|6. |氟化物    |：10 mg/kg以下。                                  |
+|7. |砷        |：3 mg/kg以下（以As計）。                         |
+|8. |鉛        |：10 mg/kg以下。                                  |
+|9. |重金屬    |：20 mg/kg以下（以Pb計）。                        |
+|10.|乾燥減重  |：2 ％以下（105 ℃，4小時後，再550 ℃，30分鐘）。   |
+|11.|水不溶物（Water insoluble  |：0.2 ％以下。                   |
+|   |matter）                   |                                 |
+|12.|分類      |：食品添加物第（十三）類。                        |
+|13.|用途      |：結著劑。                                        |
+
+
+
+§ 13002
+                                  焦磷酸鈉
+                   Tetrasodium Pyrophosphate, Decahydrate
+                            Sodium Pyrophosphate
+                    Tetrasodium Diphsophate, Decahydrate
+
+|分子式：Na4P2O710H2O             | 分子量：446.06                 |
+|1. |含量       |：含Na4P2O7 95 ％以上（以乾物重計）。             |
+|2. |外觀及性狀 |：無色～白色結晶或結晶性粉末。溶於水中，但不溶於乙|
+|   |           |醇中。                                            |
+|3. |pH    值   |：本品1 g溶於水100 mL，其溶液之pH值應為9.9～10.7。|
+|4. |磷酸鹽     |：本品1 g溶於水100 mL，取此溶液1 mL加硝酸銀試液數 |
+|   |           |滴時，不得有明顯黃色沉澱生成。若有白色或微黃色沉澱|
+|   |           |生成，此沉澱物可再溶於稀硝酸中。                  |
+|5. |鈉離子     |：本品1 g溶於水20 mL，其鈉離子試驗呈陽性反應。    |
+|6. |氟化物     |：10 mg/kg以下。                                  |
+|7. |砷         |：3 mg/kg以下（以As計）。                         |
+|8. |鉛         |：5 mg/kg以下。                                   |
+|9. |重金屬     |：10 mg/kg以下（以Pb計）。                        |
+|10.|乾燥減重   |：38～42 ％以下（105 ℃，4小時後，再800            |
+|   |           |℃，30分鐘）。                                     |
+|11.|水不溶物（Water insoluble  |：0.2 ％以下。                   |
+|   |matter）                   |                                 |
+|12.|分類       |：食品添加物第（十三）類。                        |
+|13.|用途       |：結著劑。                                        |
+
+
+§ 13003
+                              焦磷酸鈉（無水）
+                    Tetrasodium Pyrophosphate, Anhydrous
+                       Sodium Pyrophosphate, Anhydrous
+                     Tetrasodium Diphsophate, Anhydrous
+
+|分子式：Na4P2O7                  | 分子量：265.94                 |
+|1. |含量      |：含Na4P2O7 95 ％以上（以乾物重計）。             |
+|2. |外觀及性狀|：無色～白色結晶或結晶性或小粒狀粉末。溶於水中，但|
+|   |          |不溶於乙醇中。                                    |
+|3. |pH    值  |：本品1 g溶於水100 mL，其溶液之pH值應為9.9～10.7。|
+|4. |磷酸鹽    |：本品1 g溶於水100 mL，取此溶液1 mL加硝酸銀試液數 |
+|   |          |滴時，不得有明顯黃色沉澱生成。若有白色或微黃色沉澱|
+|   |          |生成，此沉澱物可再溶於稀硝酸中。                  |
+|5. |鈉離子    |：本品1 g溶於水20 mL，其鈉離子試驗呈陽性反應。    |
+|6. |氟化物    |：10 mg/kg以下。                                  |
+|7. |砷        |：3 mg/kg以下（以As計）。                         |
+|8. |鉛        |：5 mg/kg以下。                                   |
+|9. |重金屬    |：10 mg/kg以下（以Pb計）。                        |
+|10.|乾燥減重  |：0.5 ％以下（105 ℃，4小時後，再800 ℃，30分鐘）。 |
+|11.|水不溶物（Water insoluble  |：0.2 ％以下。                   |
+|   |matter）                   |                                 |
+|12.|分類      |：食品添加物第（十三）類。                        |
+|13.|用途      |：結著劑。                                        |
+
+
+§ 13004
+                                  多磷酸鉀
+                           Potassium Polyphosphate
+
+規格標準同§ 07037
+
+§ 13005
+                                  多磷酸鈉
+                            Sodium Polyphosphate
+
+規格標準同§ 07038
+
+§ 13006
+                                  偏磷酸鉀
+                           Potassium Metaphosphate
+
+規格標準同§ 07035
+
+§ 13007
+                                  偏磷酸鈉
+                            Sodium Metaphosphate
+
+規格標準同§ 07036
+
+§ 13008
+                                 磷酸二氫鉀
+                       Potassium Phosphate, Monobasic
+
+規格標準同§ 07026
+§ 13009
+                                 磷酸二氫鈉
+                         Sodium Phosphate, Monobasic
+
+規格標準同§ 07029
+
+§ 13010
+                             磷酸二氫納（無水）
+                   Sodium Phosphate, Monobasic, Anhydrous
+
+
+規格標準同§ 07030
+
+§ 13011
+                                 磷酸氫二鉀
+                        Potassium Phosphate, Dibasic
+
+規格標準同§ 07027
+
+§ 13012
+                                 磷酸氫二鈉
+                          Sodium Phosphate, Dibasic
+
+規格標準同§ 07031
+
+§ 13013
+                             磷酸氫二鈉（無水）
+                    Sodium Phosphate, Dibasic, Anhydrous
+
+規格標準同§ 07032
+§ 13014
+                                   磷酸鉀
+                        Potassium Phosphate, Tribasic
+
+規格標準同§ 07028
+
+§ 13015
+                                   磷酸鈉
+                         Sodium Phosphate, Tribasic
+
+規格標準同§ 07033
+
+§ 13016
+                               磷酸鈉（無水）
+                    Sodium Phosphate, Tribasic, Anhydrous
+
+規格標準同§ 07034
+
+
