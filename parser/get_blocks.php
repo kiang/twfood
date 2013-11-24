@@ -9,6 +9,88 @@ if (!file_exists($blockPath)) {
     mkdir($blockPath, 0755, true);
 }
 
+foreach (glob($txtPath . DS . '附表二*.DOC.txt') AS $txtFile) {
+    $targetFile = str_replace(array('.DOC.txt', 'txt' . DS), array('.csv', 'blocks' . DS), $txtFile);
+    $content = file_get_contents($txtFile);
+    $lines = explode("\n", $content);
+    $targetBlocks = array();
+    $currentBlock = array(
+        '§' => '',
+        'name' => '',
+    );
+    $lineCount = 0;
+    $lastKey = '';
+    foreach ($lines AS $line) {
+        $line = trim($line);
+        if (empty($line))
+            continue;
+        ++$lineCount;
+        if (mb_substr($line, 0, 1, 'utf8') === '§') {
+            if (!empty($currentBlock['name'])) {
+                $targetBlocks[] = $currentBlock;
+                $currentBlock = array(
+                    '§' => '',
+                    'name' => '',
+                );
+            }
+            $lineCount = 1;
+            $currentBlock['§'] = trim(mb_substr($line, 1, 100, 'utf8'));
+        } elseif (substr($line, 0, 1) !== '|') {
+            $currentBlock['name'] .= $line;
+        } else {
+            $columns = explode('|', $line);
+            foreach ($columns AS $key => $val) {
+                $columns[$key] = trim($val);
+            }
+            switch (count($columns)) {
+                case 3:
+                    break;
+                case 4:
+                case 6:
+                    $columns[1] = explode('：', $columns[1]);
+                    $currentBlock[trim($columns[1][0])] = trim($columns[1][1]);
+                    $columns[2] = explode('：', $columns[2]);
+                    $currentBlock[trim($columns[2][0])] = trim($columns[2][1]);
+                    break;
+                case 5:
+                    if (!empty($columns[2])) {
+                        $currentBlock[$columns[2]] = str_replace('：', '', $columns[3]);
+                        $lastKey = $columns[2];
+                    } else {
+                        $currentBlock[$lastKey] .= $columns[3];
+                    }
+                    break;
+                default:
+                    print_r($columns);
+                    exit();
+            }
+        }
+    }
+    $collectedKeys = array();
+    foreach($targetBlocks AS $targetBlock) {
+        foreach($targetBlock AS $key => $val) {
+            $key = trim($key);
+            $val = trim($val);
+            if(empty($key) || empty($val)) {
+                unset($targetBlock[$key]);
+            } else {
+                $collectedKeys[$key] = $key;
+                $targetBlock[$key] = $val;
+            }
+        }
+    }
+    $fh = fopen($targetFile, 'w');
+    fputcsv($fh, $collectedKeys);
+    foreach($targetBlocks AS $targetBlock) {
+        $values = array();
+        foreach($collectedKeys AS $collectedKey) {
+            $values[$collectedKey] = isset($targetBlock[$collectedKey]) ? $targetBlock[$collectedKey] : '';
+        }
+        fputcsv($fh, $values);
+    }
+    fclose($fh);
+}
+exit();
 foreach (glob($txtPath . DS . '附表一*.DOC.txt') AS $txtFile) {
     $targetFile = str_replace(array('.DOC.txt', 'txt' . DS), array('.csv', 'blocks' . DS), $txtFile);
     $fh = fopen($targetFile, 'w');
@@ -93,8 +175,9 @@ foreach (glob($txtPath . DS . '附表一*.DOC.txt') AS $txtFile) {
                 $targetBlocks[] = $currentBlock;
                 $currentBlock = array();
             }
-            foreach($targetBlocks AS $targetBlock) {
-                if(empty($targetBlock['Name']) || empty($targetBlock['S/N #'])) continue;
+            foreach ($targetBlocks AS $targetBlock) {
+                if (empty($targetBlock['Name']) || empty($targetBlock['S/N #']))
+                    continue;
                 fputcsv($fh, array($targetBlock['S/N #'], '', $targetBlock['Name'], $targetBlock['Description'], ''));
             }
             break;
@@ -123,11 +206,12 @@ foreach (glob($txtPath . DS . '附表一*.DOC.txt') AS $txtFile) {
                 $targetBlocks[] = $currentBlock;
                 $currentBlock = array();
             }
-            foreach($targetBlocks AS $targetBlock) {
-                foreach($targetBlock AS $key => $val) {
+            foreach ($targetBlocks AS $targetBlock) {
+                foreach ($targetBlock AS $key => $val) {
                     $targetBlock[$key] = trim($val);
                 }
-                if(empty($targetBlock[2]) || empty($targetBlock[1])) continue;
+                if (empty($targetBlock[2]) || empty($targetBlock[1]))
+                    continue;
                 fputcsv($fh, array($targetBlock[1], '', $targetBlock[2], $targetBlock[3], $targetBlock[4]));
             }
             break;
@@ -155,11 +239,12 @@ foreach (glob($txtPath . DS . '附表一*.DOC.txt') AS $txtFile) {
                 $targetBlocks[] = $currentBlock;
                 $currentBlock = array();
             }
-            foreach($targetBlocks AS $targetBlock) {
-                foreach($targetBlock AS $key => $val) {
+            foreach ($targetBlocks AS $targetBlock) {
+                foreach ($targetBlock AS $key => $val) {
                     $targetBlock[$key] = trim($val);
                 }
-                if(empty($targetBlock[2]) || empty($targetBlock[1])) continue;
+                if (empty($targetBlock[2]) || empty($targetBlock[1]))
+                    continue;
                 fputcsv($fh, array($targetBlock[1], '', $targetBlock[2], $targetBlock[3], $targetBlock[4]));
             }
             break;
@@ -190,11 +275,12 @@ foreach (glob($txtPath . DS . '附表一*.DOC.txt') AS $txtFile) {
                 $targetBlocks[] = $currentBlock;
                 $currentBlock = array();
             }
-            foreach($targetBlocks AS $targetBlock) {
-                foreach($targetBlock AS $key => $val) {
+            foreach ($targetBlocks AS $targetBlock) {
+                foreach ($targetBlock AS $key => $val) {
                     $targetBlock[$key] = trim($val);
                 }
-                if(empty($targetBlock[3]) || empty($targetBlock[2])) continue;
+                if (empty($targetBlock[3]) || empty($targetBlock[2]))
+                    continue;
                 fputcsv($fh, array($targetBlock[2], $targetBlock[1], $targetBlock[3], $targetBlock[4], $targetBlock[5]));
             }
             break;
